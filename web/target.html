@@ -1,0 +1,525 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<META name="description" content="南阳理工学院在线评测系统，简称NYOJ，南阳理工学院ACM队是一支优秀的队伍，一支充满活力与激情的队伍，它满载着光辉与荣誉。。。。">
+<META name="keywords" content="在线评测 NYOJ">
+<TITLE>练习场 - ACM在线评测系统</TITLE>
+<LINK href="style.css" tppabs="http://acm.nyist.net/JudgeOnline/files/style.css" rel="stylesheet" type="text/css">
+<LINK href="tmp.css" tppabs="http://acm.nyist.net/JudgeOnline/files/tmp.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="files/toplogo.ico" />
+<SCRIPT type="text/javascript" src="jquery-1.3.2.js" tppabs="http://acm.nyist.net/JudgeOnline/jquery/jquery-1.3.2.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="NYOJ_net_Analytics.js" tppabs="http://acm.nyist.net/JudgeOnline/Analytics/NYOJ_net_Analytics.js"></SCRIPT>
+<script type="text/javascript" src="flashplayer.js" tppabs="http://acm.nyist.net/JudgeOnline/files/flashplayer.js"></script>
+
+
+<link type="text/css" rel="stylesheet" href="shCore.css" tppabs="http://acm.nyist.net/JudgeOnline/showcode/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="shThemeDefault.css" tppabs="http://acm.nyist.net/JudgeOnline/showcode/shThemeDefault.css"/> 
+	</HEAD>
+<body>
+<div style="position: absolute; top: -100000px;" id="soundplayerlayer"></div>
+<script type="text/javascript" reload="1">
+function soundplayer(file) {
+	document.getElementById('soundplayerlayer').innerHTML = AC_FL_RunContent('id', 'pmsoundplayer', 'name', 'pmsoundplayer', 'width', '0', 'height', '0', 'src', 'player.swf'/*tpa=http://acm.nyist.net/JudgeOnline/files/sound/player.swf*/, 'FlashVars', 'sFile=files/sound/pm_' + file + '.mp3', 'menu', 'false',  'allowScriptAccess', 'sameDomain', 'swLiveConnect', 'true');
+}
+</script>
+<!-- header -->
+    <DIV class="header" ></DIV>
+    <!-- /header -->
+    
+    <!-- page-title -->
+    <DIV class="page-title">
+    	<DIV class="wrapper">
+    		<A href="problemset.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/" title="首页" class="logo"></A>
+    		<DIV class="nav-main">
+    			<DIV class="nav-main-head">
+    				<A href="about.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/about.php">ACM队</A>&nbsp;&nbsp;&nbsp;&nbsp;
+    				<A href="profile.php-userid=.htm" tppabs="http://acm.nyist.net/JudgeOnline/profile.php?userid="></A></DIV>  
+				        		<DIV class="logstate"><A href="login.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/login.php">登录</A><A href="reg.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/reg.php">注册</A></DIV>      
+                               
+                </DIV>
+        	<DIV class="clear"></DIV>
+            <!-- nav-second -->
+            <DIV class="nav-second">
+              <DIV class="page-info"> <a href="problem.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php"> <IMG src="rand.png" tppabs="http://acm.nyist.net/JudgeOnline/img/rand.png">随机选题</a>
+                  <DIV class="user-state"><A href="reg.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/reg.php">还没有账号？</A></DIV></DIV> 
+				<UL>
+	<li><a href="problemset.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php">练习</a></li><li><a href="problemtypelist.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemtypelist.php">分类</a></li><li><a href="contestset.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/contestset.php">比赛</a></li><li><a href="class.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/class.php">班级</a></li><li><a href="rank.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/rank.php">排名</a></li><li><a href="about.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/about.php">关于</a></li></UL>                <DIV class="nav-second-right"></DIV>
+                <DIV class="clear"></DIV>
+            </DIV>
+            <!-- /nav-second -->
+        </DIV>
+    </DIV>
+    <!-- /page-title -->
+    
+   
+  <!-- content -->
+    <DIV class="content">
+    	<DIV class="wrapper">
+        	<!-- side -->
+        	<DIV class="side">
+            	<!--[if IE 6]><div style="height:600px; width:0px; float:left;"></div><![endif]-->
+                
+                <h2>&nbsp;</h2>      
+              <DIV id="gadgets">         
+         <h3>公告</h3>
+ 
+        <div class="sidebar_content"><marquee direction='up' scrolldelay='100' scrollamount='2' truespeed="truespeed" onMouseOver='this.stop()' onMouseOut='this.start()' height='200'> 
+整天刷水题就是浪费生命，NYOJ推出智能屏蔽功能，根据你的水平，智能的为你屏蔽掉题目列表中的水题。（不影响其它方式打开该题目,并可关掉该功能）。
+<br/>欢迎试用
+<hr/>
+
+<font color="red">为解决OJ经常卡顿的问题，目前排名修改为了非实时的排名，数据每隔一个小时更新一次</font></br>
+第七届河南省ACM程序设计大赛最终排名:<a href="javascript:if(confirm('http://acm.nyist.net/province-contest-2014.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://acm.nyist.net/province-contest-2014.html'" tppabs="http://acm.nyist.net/province-contest-2014.html">http://acm.nyist.net/province-contest-2014.html</a><br/>
+热烈庆祝我校获得4金5银的佳绩。
+<br/>
+<br/>
+
+每天AC一道题，一年365道题，你就能成为一个编程高手
+<br><br>
+
+<font color="blue">南工ACM校集训队新开官方博客与微博，快来围观吧！</font><br/>
+<a href="javascript:if(confirm('http://blog.sina.com.cn/u/3969932680  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://blog.sina.com.cn/u/3969932680'" tppabs="http://blog.sina.com.cn/u/3969932680" target="_blank">南工ACM校集训队博客</a><br/>
+<a href="javascript:if(confirm('http://weibo.com/u/3969932680  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://weibo.com/u/3969932680'" tppabs="http://weibo.com/u/3969932680" target="_blank">南工ACM校集训队微博</a><br/><br/>
+
+
+官方QQ群一：<font color="red">124588807</font>（请自觉确保已经AC至少100道题目） <br />
+官方QQ群二：<font color="red">1625009</font> （请确保已经AC至少50道题目）<br/>
+官方QQ群三：<font color="red">143980285</font> （请确保该账号已经AC至少30道题目）<br/>
+官方贴吧：<a href="javascript:if(confirm('http://tieba.baidu.com/f?kw=%C4%CF%D1%F4%C0%ED%B9%A4%D1%A7%D4%BAacmicpc  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://tieba.baidu.com/f?kw=%C4%CF%D1%F4%C0%ED%B9%A4%D1%A7%D4%BAacmicpc'" tppabs="http://tieba.baidu.com/f?kw=%C4%CF%D1%F4%C0%ED%B9%A4%D1%A7%D4%BAacmicpc" target="_blank">南阳理工学院acmicpc吧</a><br/>
+另有：南工ACM数学群57797885，欢迎数学系学生或者更喜欢数学的同学加入(本数学群只加本校学生，请外校学生尽量少申请此群，谢谢合作）。</marquee>
+          </div>
+      <hr  style=" border:dotted 1px #CCC" /> <br />
+      <form method="GET" action="problem.php-pid=.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid="> 
+            <fieldset> 
+                题目编号<input name="pid" value="" size="15">
+                <button type="submit" class="btn">转到</button> 
+            </fieldset> 
+        </form> <br />
+	<form method="GET" action="keysearch.php-key=.htm" tppabs="http://acm.nyist.net/JudgeOnline/keysearch.php?key="> 
+            <fieldset> 
+               题目信息<input name="key" value="" size="15">
+                <button type="submit" class="btn">搜索</button> 
+            </fieldset> 
+        </form> <br />
+<form method="GET" action="search_information.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/search_information.php"> 
+<fieldset> 
+<button type="submit" class="btn">高级查找</button> 
+ </fieldset> 
+</form><br />
+
+
+</DIV>
+            </DIV>
+            <!-- /side -->
+            <!-- main -->
+            <DIV class="main">
+           		
+<ul class="nav3"><li class="cat">练习场</li><li class="current"><a href="problemset.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php">题目列表</a></li><li ><a href="status.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/status.php">运行结果</a></li><DIV class="clr"></DIV></ul><div class="pagination"><ul class="pagination"><li><a href="problemset.php-page=1.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=1"><<</a></li><li class="current">1</li><li><a href="problemset.php-page=2.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=2">2</a></li><li><a href="problemset.php-page=3.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=3">3</a></li><li><a href="problemset.php-page=4.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=4">4</a></li><li><a href="problemset.php-page=5.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=5">5</a></li><li><a href="problemset.php-page=6.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=6">6</a></li><li><a href="problemset.php-page=7.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=7">7</a></li><li><a href="problemset.php-page=8.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=8">8</a></li><li><a href="problemset.php-page=9.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=9">9</a></li><li><a href="problemset.php-page=10.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=10">10</a></li><li><a href="problemset.php-page=11.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=11">11</a></li><li><a href="problemset.php-page=11.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=11">>></a></li></ul></div><div class="clear"></div>
+
+
+
+
+<TABLE id="alternate" class="table-list" cellpadding="0" cellspacing="0" style = "font-size:12px;">
+	<THEAD> 
+		<TR class="even">			<TH width="30" class="pass">
+				通过			</TH>
+					<TH width="30" class="id">
+				题号			</TH>
+                <TH width="44">难度</TH>
+					<TH width="79" class="title">
+				标题			</TH>
+					<TH  colspan="2">
+				通过率			</TH>
+                <th width="40">标程</th>
+		</TR> 
+	</THEAD> 
+	<TBODY>		
+	     
+         <TR ><TD></TD>		<TD>1</TD>	<TD>0</TD>		<TD class="probname tal"><a href="problem.php-pid=1.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=1">A+B Problem</a></TD>		<TD width="55" >57 %</TD><TD class="pass-total tal">(22038/38895)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>2</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=2.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=2">括号配对问题</a></TD>		<TD width="55" >24 %</TD><TD class="pass-total tal">(6581/26897)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>3</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=3.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=3">多边形重心问题</a></TD>		<TD width="55" >34 %</TD><TD class="pass-total tal">(739/2179)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>4</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=4.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=4">ASCII码排序</a></TD>		<TD width="55" >43 %</TD><TD class="pass-total tal">(8130/18846)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>5</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=5.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=5">Binary String Matching</a></TD>		<TD width="55" >53 %</TD><TD class="pass-total tal">(2648/4950)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>6</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=6.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=6">喷水装置（一）</a></TD>		<TD width="55" >55 %</TD><TD class="pass-total tal">(2978/5368)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>7</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=7.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=7">街区最短路径问题</a></TD>		<TD width="55" >50 %</TD><TD class="pass-total tal">(1593/3171)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>8</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=8.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=8">一种排序</a></TD>		<TD width="55" >38 %</TD><TD class="pass-total tal">(2509/6627)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>9</TD>	<TD>6</TD>		<TD class="probname tal"><a href="problem.php-pid=9.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=9">posters</a></TD>		<TD width="55" >16 %</TD><TD class="pass-total tal">(214/1303)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>10</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=10.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=10">skiing</a></TD>		<TD width="55" >41 %</TD><TD class="pass-total tal">(1149/2779)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>11</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=11.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=11">奇偶数分离</a></TD>		<TD width="55" >50 %</TD><TD class="pass-total tal">(8830/17795)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>12</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=12.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=12">喷水装置（二）</a></TD>		<TD width="55" >27 %</TD><TD class="pass-total tal">(1165/4240)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>13</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=13.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=13">Fibonacci数</a></TD>		<TD width="55" >65 %</TD><TD class="pass-total tal">(7077/10886)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>14</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=14.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=14">会场安排问题</a></TD>		<TD width="55" >34 %</TD><TD class="pass-total tal">(1920/5665)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>15</TD>	<TD>6</TD>		<TD class="probname tal"><a href="problem.php-pid=15.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=15">括号匹配（二）</a></TD>		<TD width="55" >34 %</TD><TD class="pass-total tal">(941/2744)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>16</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=16.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=16">矩形嵌套</a></TD>		<TD width="55" >33 %</TD><TD class="pass-total tal">(1523/4630)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>17</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=17.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=17">单调递增最长子序列</a></TD>		<TD width="55" >44 %</TD><TD class="pass-total tal">(1971/4444)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>18</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=18.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=18">The Triangle</a></TD>		<TD width="55" >71 %</TD><TD class="pass-total tal">(1094/1551)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>19</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=19.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=19">擅长排列的小明</a></TD>		<TD width="55" >67 %</TD><TD class="pass-total tal">(1246/1871)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>20</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=20.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=20">吝啬的国度</a></TD>		<TD width="55" >34 %</TD><TD class="pass-total tal">(1508/4464)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>21</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=21.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=21">三个水杯</a></TD>		<TD width="55" >39 %</TD><TD class="pass-total tal">(901/2299)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>22</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=22.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=22">素数求和问题</a></TD>		<TD width="55" >48 %</TD><TD class="pass-total tal">(5987/12491)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>23</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=23.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=23">取石子（一）</a></TD>		<TD width="55" >46 %</TD><TD class="pass-total tal">(2236/4865)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>24</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=24.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=24">素数距离问题</a></TD>		<TD width="55" >25 %</TD><TD class="pass-total tal">(4293/17238)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>25</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=25.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=25">A Famous Music Composer</a></TD>		<TD width="55" >43 %</TD><TD class="pass-total tal">(1002/2337)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>26</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=26.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=26">孪生素数问题</a></TD>		<TD width="55" >24 %</TD><TD class="pass-total tal">(1595/6704)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>27</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=27.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=27">水池数目</a></TD>		<TD width="55" >56 %</TD><TD class="pass-total tal">(1716/3082)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>28</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=28.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=28">大数阶乘</a></TD>		<TD width="55" >41 %</TD><TD class="pass-total tal">(2608/6378)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>29</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=29.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=29">求转置矩阵问题</a></TD>		<TD width="55" >69 %</TD><TD class="pass-total tal">(2445/3556)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>30</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=30.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=30">Gone Fishing</a></TD>		<TD width="55" >41 %</TD><TD class="pass-total tal">(125/306)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>31</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=31.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=31">5个数求最值</a></TD>		<TD width="55" >55 %</TD><TD class="pass-total tal">(10427/18820)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>32</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=32.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=32">组合数</a></TD>		<TD width="55" >60 %</TD><TD class="pass-total tal">(1065/1785)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>33</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=33.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=33">蛇形填数</a></TD>		<TD width="55" >51 %</TD><TD class="pass-total tal">(3062/5973)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>34</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=34.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=34">韩信点兵</a></TD>		<TD width="55" >69 %</TD><TD class="pass-total tal">(5121/7398)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>35</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=35.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=35">表达式求值</a></TD>		<TD width="55" >40 %</TD><TD class="pass-total tal">(775/1947)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>36</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=36.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=36">最长公共子序列</a></TD>		<TD width="55" >43 %</TD><TD class="pass-total tal">(1830/4269)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>37</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=37.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=37">回文字符串</a></TD>		<TD width="55" >45 %</TD><TD class="pass-total tal">(1064/2348)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>38</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=38.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=38">布线问题</a></TD>		<TD width="55" >41 %</TD><TD class="pass-total tal">(1091/2673)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>39</TD>	<TD>0</TD>		<TD class="probname tal"><a href="problem.php-pid=39.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=39">水仙花数</a></TD>		<TD width="55" >38 %</TD><TD class="pass-total tal">(6925/18142)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>40</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=40.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=40">公约数和公倍数</a></TD>		<TD width="55" >46 %</TD><TD class="pass-total tal">(5082/11016)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>41</TD>	<TD>0</TD>		<TD class="probname tal"><a href="problem.php-pid=41.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=41">三个数从小到大排序</a></TD>		<TD width="55" >45 %</TD><TD class="pass-total tal">(7075/15867)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>42</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=42.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=42">一笔画问题</a></TD>		<TD width="55" >36 %</TD><TD class="pass-total tal">(1101/3024)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>43</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=43.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=43">24 Point game</a></TD>		<TD width="55" >37 %</TD><TD class="pass-total tal">(189/506)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>44</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=44.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=44">子串和</a></TD>		<TD width="55" >38 %</TD><TD class="pass-total tal">(2007/5313)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>45</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=45.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=45">棋盘覆盖</a></TD>		<TD width="55" >44 %</TD><TD class="pass-total tal">(693/1577)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>46</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=46.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=46">最少乘法次数</a></TD>		<TD width="55" >45 %</TD><TD class="pass-total tal">(1008/2242)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>47</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=47.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=47">过河问题</a></TD>		<TD width="55" >34 %</TD><TD class="pass-total tal">(1162/3382)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>48</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=48.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=48">小明的调查作业</a></TD>		<TD width="55" >41 %</TD><TD class="pass-total tal">(2331/5749)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>49</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=49.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=49">开心的小明</a></TD>		<TD width="55" >40 %</TD><TD class="pass-total tal">(936/2350)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>50</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=50.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=50">爱摘苹果的小明</a></TD>		<TD width="55" >44 %</TD><TD class="pass-total tal">(2467/5631)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>51</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=51.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=51">管闲事的小明</a></TD>		<TD width="55" >41 %</TD><TD class="pass-total tal">(1159/2842)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>52</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=52.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=52">无聊的小明</a></TD>		<TD width="55" >24 %</TD><TD class="pass-total tal">(346/1463)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>53</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=53.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=53">不高兴的小明</a></TD>		<TD width="55" >34 %</TD><TD class="pass-total tal">(1952/5807)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>54</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=54.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=54">小明的存钱计划</a></TD>		<TD width="55" >29 %</TD><TD class="pass-total tal">(836/2915)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>55</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=55.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=55">懒省事的小明</a></TD>		<TD width="55" >18 %</TD><TD class="pass-total tal">(883/4902)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>56</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=56.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=56">阶乘因式分解（一）</a></TD>		<TD width="55" >72 %</TD><TD class="pass-total tal">(2976/4116)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>57</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=57.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=57">6174问题</a></TD>		<TD width="55" >48 %</TD><TD class="pass-total tal">(3038/6310)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>58</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=58.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=58">最少步数</a></TD>		<TD width="55" >56 %</TD><TD class="pass-total tal">(1447/2596)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>59</TD>	<TD>6</TD>		<TD class="probname tal"><a href="problem.php-pid=59.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=59">小明组织活动的任务</a></TD>		<TD width="55" >13 %</TD><TD class="pass-total tal">(18/136)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>60</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=60.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=60">谁获得了最高奖学金</a></TD>		<TD width="55" >36 %</TD><TD class="pass-total tal">(1950/5380)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>61</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=61.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=61">传纸条（一）</a></TD>		<TD width="55" >33 %</TD><TD class="pass-total tal">(456/1365)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>62</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=62.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=62">笨小熊</a></TD>		<TD width="55" >30 %</TD><TD class="pass-total tal">(2289/7561)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>63</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=63.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=63">小猴子下落</a></TD>		<TD width="55" >65 %</TD><TD class="pass-total tal">(1108/1714)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>64</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=64.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=64">鸡兔同笼</a></TD>		<TD width="55" >35 %</TD><TD class="pass-total tal">(4776/13655)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>65</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=65.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=65">另一种阶乘问题</a></TD>		<TD width="55" >75 %</TD><TD class="pass-total tal">(3494/4659)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>66</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=66.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=66">分数拆分</a></TD>		<TD width="55" >63 %</TD><TD class="pass-total tal">(1341/2126)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>67</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=67.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=67">三角形面积</a></TD>		<TD width="55" >46 %</TD><TD class="pass-total tal">(1864/4051)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>68</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=68.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=68">三点顺序</a></TD>		<TD width="55" >51 %</TD><TD class="pass-total tal">(1079/2110)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>69</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=69.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=69">数的长度</a></TD>		<TD width="55" >63 %</TD><TD class="pass-total tal">(1774/2801)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>70</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=70.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=70">阶乘因式分解（二）</a></TD>		<TD width="55" >68 %</TD><TD class="pass-total tal">(966/1418)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>71</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=71.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=71">独木舟上的旅行</a></TD>		<TD width="55" >51 %</TD><TD class="pass-total tal">(1624/3154)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>72</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=72.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=72">Financial Management</a></TD>		<TD width="55" >76 %</TD><TD class="pass-total tal">(1843/2435)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>73</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=73.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=73">比大小</a></TD>		<TD width="55" >36 %</TD><TD class="pass-total tal">(1598/4430)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>74</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=74.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=74">小学生算术</a></TD>		<TD width="55" >49 %</TD><TD class="pass-total tal">(3626/7387)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>75</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=75.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=75">日期计算</a></TD>		<TD width="55" >55 %</TD><TD class="pass-total tal">(3169/5718)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>76</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=76.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=76">超级台阶</a></TD>		<TD width="55" >46 %</TD><TD class="pass-total tal">(1725/3732)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>77</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=77.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=77">开灯问题</a></TD>		<TD width="55" >66 %</TD><TD class="pass-total tal">(3583/5454)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>78</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=78.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=78">圈水池</a></TD>		<TD width="55" >45 %</TD><TD class="pass-total tal">(312/686)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>79</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=79.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=79">拦截导弹</a></TD>		<TD width="55" >43 %</TD><TD class="pass-total tal">(1460/3364)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>80</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=80.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=80">A Famous Airport Manager</a></TD>		<TD width="55" >30 %</TD><TD class="pass-total tal">(8/27)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>81</TD>	<TD>6</TD>		<TD class="probname tal"><a href="problem.php-pid=81.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=81">炮兵阵地</a></TD>		<TD width="55" >24 %</TD><TD class="pass-total tal">(112/476)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>82</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=82.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=82">迷宫寻宝（一）</a></TD>		<TD width="55" >26 %</TD><TD class="pass-total tal">(494/1889)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>83</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=83.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=83">迷宫寻宝（二）</a></TD>		<TD width="55" >38 %</TD><TD class="pass-total tal">(61/161)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>84</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=84.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=84">阶乘的0</a></TD>		<TD width="55" >65 %</TD><TD class="pass-total tal">(941/1452)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>85</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=85.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=85">有趣的数</a></TD>		<TD width="55" >73 %</TD><TD class="pass-total tal">(997/1374)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>86</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=86.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=86">找球号(一）</a></TD>		<TD width="55" >33 %</TD><TD class="pass-total tal">(1403/4242)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>87</TD>	<TD>6</TD>		<TD class="probname tal"><a href="problem.php-pid=87.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=87">棋盘分割</a></TD>		<TD width="55" >43 %</TD><TD class="pass-total tal">(25/58)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>88</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=88.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=88">汉诺塔（一）</a></TD>		<TD width="55" >37 %</TD><TD class="pass-total tal">(817/2217)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>89</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=89.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=89">汉诺塔（二）</a></TD>		<TD width="55" >50 %</TD><TD class="pass-total tal">(93/186)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>90</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=90.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=90">整数划分</a></TD>		<TD width="55" >68 %</TD><TD class="pass-total tal">(748/1095)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>91</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=91.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=91">阶乘之和</a></TD>		<TD width="55" >43 %</TD><TD class="pass-total tal">(1633/3773)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>92</TD>	<TD>4</TD>		<TD class="probname tal"><a href="problem.php-pid=92.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=92">图像有用区域</a></TD>		<TD width="55" >22 %</TD><TD class="pass-total tal">(584/2599)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>93</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=93.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=93">汉诺塔（三）</a></TD>		<TD width="55" >53 %</TD><TD class="pass-total tal">(656/1238)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>94</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=94.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=94">cigarettes</a></TD>		<TD width="55" >56 %</TD><TD class="pass-total tal">(1414/2532)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>95</TD>	<TD>3</TD>		<TD class="probname tal"><a href="problem.php-pid=95.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=95">众数问题</a></TD>		<TD width="55" >50 %</TD><TD class="pass-total tal">(1321/2618)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>96</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=96.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=96">n-1位数</a></TD>		<TD width="55" >58 %</TD><TD class="pass-total tal">(3506/6000)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>97</TD>	<TD>2</TD>		<TD class="probname tal"><a href="problem.php-pid=97.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=97">兄弟郊游问题</a></TD>		<TD width="55" >44 %</TD><TD class="pass-total tal">(2665/6093)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>98</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=98.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=98">成绩转换</a></TD>		<TD width="55" >57 %</TD><TD class="pass-total tal">(4525/7982)</TD><td></td></TR>
+   
+         
+         <TR ><TD></TD>		<TD>99</TD>	<TD>5</TD>		<TD class="probname tal"><a href="problem.php-pid=99.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=99">单词拼接</a></TD>		<TD width="55" >21 %</TD><TD class="pass-total tal">(204/990)</TD><td></td></TR>
+   
+         
+         <TR class="even"><TD></TD>		<TD>100</TD>	<TD>1</TD>		<TD class="probname tal"><a href="problem.php-pid=100.htm" tppabs="http://acm.nyist.net/JudgeOnline/problem.php?pid=100">1的个数</a></TD>		<TD width="55" >66 %</TD><TD class="pass-total tal">(3814/5800)</TD><td></td></TR>
+   
+    	</TBODY>
+</TABLE>
+<div class="pagination"><ul class="pagination"><li><a href="problemset.php-page=1.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=1"><<</a></li><li class="current">1</li><li><a href="problemset.php-page=2.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=2">2</a></li><li><a href="problemset.php-page=3.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=3">3</a></li><li><a href="problemset.php-page=4.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=4">4</a></li><li><a href="problemset.php-page=5.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=5">5</a></li><li><a href="problemset.php-page=6.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=6">6</a></li><li><a href="problemset.php-page=7.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=7">7</a></li><li><a href="problemset.php-page=8.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=8">8</a></li><li><a href="problemset.php-page=9.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=9">9</a></li><li><a href="problemset.php-page=10.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=10">10</a></li><li><a href="problemset.php-page=11.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=11">11</a></li><li><a href="problemset.php-page=11.htm" tppabs="http://acm.nyist.net/JudgeOnline/problemset.php?page=11">>></a></li></ul></div><div class="clear"></div>
+            
+</DIV>
+            <!-- /main --><!--[if IE 6]><div style="width:0;height:300px;float:left;"></div><![endif]-->
+            <DIV class="clear"></DIV>
+        </DIV>
+</DIV>
+    <!-- /content -->
+   
+
+
+   
+
+
+
+<!--
+<a href="http://59.69.128.203/wenda/" target="_blank">
+<div id="roll" style="width:110px;height:80px; font-size: 17px;color:#fff; position:absolute;"><img src="img/wenda.png" /></div>
+</a> 
+
+ <script type="text/javascript">
+ var ggRoll = {
+     roll : document.getElementById("roll"),
+     speed : 20,
+     statusX : 1,
+     statusY : 1,
+     x : 100,
+     y : 300,
+     winW : document.documentElement.clientWidth - document.getElementById("roll").offsetWidth,
+     winH : document.documentElement.clientHeight - document.getElementById("roll").offsetHeight,
+     Go : function(){
+         this.roll.style.left=this.x+'px';
+         this.roll.style.top=this.y+'px';
+          
+         this.x = this.x + (this.statusX? -1: 1)
+         if(this.x < 0) {this.statusX = 0}
+         if(this.x > this.winW) {this.statusX = 1}
+          
+         this.y = this.y + (this.statusY? -1: 1)
+         if(this.y < 0) {this.statusY = 0}
+         if(this.y > this.winH) {this.statusY = 1}
+     }
+ }
+ var interval = setInterval("ggRoll.Go()", ggRoll.speed);
+ ggRoll.roll.onmouseover = function(){clearInterval(interval)};
+ ggRoll.roll.onmouseout = function(){interval = setInterval("ggRoll.Go()", ggRoll.speed)};
+ 
+ </script>
+--> 
+ 
+
+ 
+﻿   <!-- footer -->
+    <DIV class="footer">
+    	<DIV class="wrapper">
+    		<DIV class="us">
+	©2010 acm.nyist.net, all rights reserved<BR>
+	<A href="about.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/about.php">关于我们</A><BR>
+	<A href="member.php.htm" tppabs="http://acm.nyist.net/JudgeOnline/member.php">联系我们</A>
+</DIV>
+<DIV class="flink">
+  <div align="center"><BR>
+	<p class="last">友情链接：
+    <a href="javascript:if(confirm('http://acm.nyist.net/acm-icpc/provincial/sixth/news.php  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://acm.nyist.net/acm-icpc/provincial/sixth/news.php'" tppabs="http://acm.nyist.net/acm-icpc/provincial/sixth/news.php" target="_blank"> 2013河南省赛  </a>
+<a href="javascript:if(confirm('http://blog.sina.com.cn/cjhwang  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://blog.sina.com.cn/cjhwang'" tppabs="http://blog.sina.com.cn/cjhwang" target="_blank">黄金雄教授博客 </a> 
+<a href="javascript:if(confirm('http://icpc.njust.edu.cn/invitation/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://icpc.njust.edu.cn/invitation/'" tppabs="http://icpc.njust.edu.cn/invitation/" target="_blank">南京赛区 </a> 
+<a href="javascript:if(confirm('http://1.2013changsha.duapp.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://1.2013changsha.duapp.com/'" tppabs="http://1.2013changsha.duapp.com/" target="_blank">长沙赛区 </a>
+<a href="#" target="_blank">长春赛区 </a>
+<a href="javascript:if(confirm('http://acm.zjut.edu.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://acm.zjut.edu.cn/'" tppabs="http://acm.zjut.edu.cn/" target="_blank">杭州赛区 </a>
+<a href="javascript:if(confirm('http://acm.uestc.edu.cn/ContestService/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://acm.uestc.edu.cn/ContestService/'" tppabs="http://acm.uestc.edu.cn/ContestService/" target="_blank">成都赛区 </a>
+</p>
+    <A href="javascript:if(confirm('http://cie.nyist.edu.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://cie.nyist.edu.cn/'" tppabs="http://cie.nyist.edu.cn/" target="_blank">计算机与信息工程学院</A><br/>
+    <span>访问量：29588939人次(从2010年10月26日晚开始统计)</span></div>
+</DIV>
+
+        	    </DIV>
+    </DIV>    
+ 
+</body>
+<!--[if lt IE 7]>
+<script defer type="text/javascript" src="png.js" tppabs="http://acm.nyist.net/JudgeOnline/files/png.js"></script>
+<![endif]-->
+</html>
+    <!-- /footer -->
+
